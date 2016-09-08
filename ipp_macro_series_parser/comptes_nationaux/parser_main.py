@@ -64,7 +64,7 @@ def cn_df_generator(year, list_years = None, drop_duplicates = True, subset = No
     Returns the main table of comptabilite nationale data for all years from 1949 to 2013.
     """
     tee_df_by_year = tee_df_by_year_generator(year, list_years)  # arguments: (year, [years_list])
-    non_tee_df_by_filename = non_tee_df_by_filename_generator(year)  # arguement: (year)
+    non_tee_df_by_filename = non_tee_df_by_filename_generator(year)  # argument: (year)
 
     df_full = pandas.DataFrame()
 

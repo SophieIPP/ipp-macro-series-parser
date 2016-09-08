@@ -124,7 +124,7 @@ def look_many(df, entry_by_index_list, years = None):
 
 def get_or_construct_value(df, variable_name, index_by_variable, years = None, fill_value = numpy.NaN):
     """
-    Returns the DateFrame (1 column) of the value of economic variable(s) for years of interest.
+    Returns the DataFrame (1 column) of the value of economic variable(s) for years of interest.
     Years are set to the index of the DataFrame.
 
     Parameters
@@ -175,7 +175,7 @@ def get_or_construct_value(df, variable_name, index_by_variable, years = None, f
     ...         'formula': 'Interets_verses_par_rdm + Dividendes_verses_par_rdm_D42 + Dividendes_verses_par_rdm_D43 + Revenus_propriete_verses_par_rdm'
     ...     }
     ... }
-    >>> computed_variable_vector, computed_variable_formula = get_or_construct(
+    >>> computed_variable_vector, computed_variable_formula = get_or_construct_value(
     ...     df, 'Interets_dividendes_nets_verses_par_rdm', index_by_variable
     ...     )
 

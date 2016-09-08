@@ -54,6 +54,9 @@ def file_infos(excelfile_name):
         elif filename == 't_1115':
             agent = 'S1'
             title = 'Produit intérieur brut et revenu national brut par habitant'
+        elif filename == 'conso-eff-fonction':
+            agent = 'S14'
+            title = 'Consommation effective des ménages, par fonction'
 
         # to be completed for all the files of interest in the folder
         # elif filename == 't_3101':
